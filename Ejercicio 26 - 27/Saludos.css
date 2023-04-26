@@ -29,5 +29,6 @@
     align-items: center;
     width: 10%;
     height: 10vh;
-    background-color: lightgreen;
+    background-color: green;
+    font-size: 35px;
 }
