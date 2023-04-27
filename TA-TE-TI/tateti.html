@@ -1,26 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="tateti.css">
+    <title>3 en raya - Alberto Palomo Pino</title>
+    <link rel="stylesheet" href="./tateti.css">
 </head>
-<body>
-    <h1>Tres en Raya</h1>
-	<div id="board">
-		<div class="square" id="0"></div>
-		<div class="square" id="1"></div>
-		<div class="square" id="2"></div>
-		<div class="square" id="3"></div>
-		<div class="square" id="4"></div>
-		<div class="square" id="5"></div>
-		<div class="square" id="6"></div>
-		<div class="square" id="7"></div>
-		<div class="square" id="8"></div>
-	</div>
 
-	<script src="./tateti.js"></script>
+<body>
+    <div id="table">
+        <div id="board">
+
+            <div class="column" id="column1">
+                <div class="cuadro cuadrosuperior" id="c1" onmouseenter="cambioColor('c1')"
+                    onmouseleave="colorOriginal('c1')" onclick="jugadorUno('c1')">1</div>
+
+                <div class="cuadro" id="c4" onmouseenter="cambioColor('c4')" onmouseleave="colorOriginal('c4')"
+                onclick="jugadorUno('c4')">4</div>
+
+                <div class="cuadro cuadroinferior" id="c7" onmouseenter="cambioColor('c7')"
+                    onmouseleave="colorOriginal('c7')" onclick="jugadorUno('c7')">7</div>
+            </div>
+
+            <div class="column" id="column2">
+
+                <div class="cuadro cuadrosuperior" id="c2" onmouseenter="cambioColor('c2')"
+                    onmouseleave="colorOriginal('c2')" onclick="jugadorUno('c2')">2</div>
+
+                <div class="cuadro" id="c5" onmouseenter="cambioColor('c5')" onmouseleave="colorOriginal('c5')"
+                onclick="jugadorUno('c5')">5</div>
+
+                <div class="cuadro cuadroinferior" id="c8" onmouseenter="cambioColor('c8')"
+                    onmouseleave="colorOriginal('c8')" onclick="jugadorUno('c8')">8</div>
+            </div>
+
+            <div class="column" id="column3">
+                <div class="cuadro cuadrosuperior" id="c3" onmouseenter="cambioColor('c3')"
+                    onmouseleave="colorOriginal('c3')" onclick="jugadorUno('c3')">3</div>
+
+                <div class="cuadro" id="c6" onmouseenter="cambioColor('c6')" onmouseleave="colorOriginal('c6')"
+                onclick="jugadorUno('c6')">6</div>
+
+                <div class="cuadro cuadroinferior" id="c9" onmouseenter="cambioColor('c9')"
+                    onmouseleave="colorOriginal('c9')" onclick="jugadorUno('c9')">9</div>
+            </div>
+        </div>
+    </div>
+    <script src="./tateti.js"> </script>
 </body>
+
 </html>
